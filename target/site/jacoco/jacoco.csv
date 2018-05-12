@@ -1,0 +1,6 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+microservice,com.telstra.codechallenge.quotes,SpringBootQuotesService,34,6,0,0,2,3,2,1,2,1
+microservice,com.telstra.codechallenge.quotes,SpringBootQuotesController,9,6,0,0,2,3,2,1,2,1
+microservice,com.telstra.codechallenge.helloworld,HelloWorldController,15,8,0,0,1,2,1,1,1,1
+microservice,com.telstra.codechallenge.helloworld,HelloWorld,15,0,0,0,6,0,3,0,3,0
+microservice,com.telstra.codechallenge,MicroServiceMain,5,7,0,0,2,2,1,2,1,2
