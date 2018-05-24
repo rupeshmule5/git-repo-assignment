@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="3" failures="0" name="com.telstra.codechallenge.service.HottestRepoCreatedLastWeekTest" time="7.057" errors="3" skipped="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jre1.8.0_131\bin"/>
+    <property name="java.vm.version" value="25.131-b11"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="D:\c967784-spring-boot-coding-exercise-f23e9d5fe4dc\microservice"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="D:\c967784-spring-boot-coding-exercise-f23e9d5fe4dc\microservice"/>
+    <property name="java.runtime.version" value="1.8.0_131-b11"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jre1.8.0_131\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\RU20012347\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="classworlds.conf" value="D:\Assignment_Shree\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf3629673480081750796.tmp"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jre1.8.0_131\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;C:/Program Files/Java/jre1.8.0_131/bin/server;C:/Program Files/Java/jre1.8.0_131/bin;C:/Program Files/Java/jre1.8.0_131/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Git\cmd;C:\Users\RU20012347\AppData\Local\Microsoft\WindowsApps;;D:\Softwares\sts-bundle\sts-3.9.1.RELEASE;;."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.0"/>
+    <property name="user.home" value="C:\Users\RU20012347"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="user.name" value="RU20012347"/>
+    <property name="java.class.path" value="D:\Softwares\sts-bundle\sts-3.9.1.RELEASE\plugins\org.eclipse.m2e.maven.runtime_1.8.2.20171007-0216\jars\plexus-classworlds-2.5.2.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="C:\Program Files\Java\jre1.8.0_131"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B install"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_131"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jre1.8.0_131\lib\ext;C:\windows\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jre1.8.0_131\lib\resources.jar;C:\Program Files\Java\jre1.8.0_131\lib\rt.jar;C:\Program Files\Java\jre1.8.0_131\lib\sunrsasign.jar;C:\Program Files\Java\jre1.8.0_131\lib\jsse.jar;C:\Program Files\Java\jre1.8.0_131\lib\jce.jar;C:\Program Files\Java\jre1.8.0_131\lib\charsets.jar;C:\Program Files\Java\jre1.8.0_131\lib\jfr.jar;C:\Program Files\Java\jre1.8.0_131\classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="D:\c967784-spring-boot-coding-exercise-f23e9d5fe4dc\microservice\EMBEDDED"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase classname="com.telstra.codechallenge.service.HottestRepoCreatedLastWeekTest" name="hottestCreatedRepoServiceCheckTest" time="1.188">
+    <error message="I/O error on GET request for &quot;http://localhost:8080/api/hottestcreatedrepo&quot;: Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect" type="org.springframework.web.client.ResourceAccessException">org.springframework.web.client.ResourceAccessException: I/O error on GET request for &quot;http://localhost:8080/api/hottestcreatedrepo&quot;: Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:674)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:621)
+	at org.springframework.web.client.RestTemplate.getForObject(RestTemplate.java:295)
+	at com.telstra.codechallenge.service.HottestRepoCreatedLastWeekTest.hottestCreatedRepoServiceCheckTest(HottestRepoCreatedLastWeekTest.java:42)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:75)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:252)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:53)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:123)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:104)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at sun.net.NetworkClient.doConnect(Unknown Source)
+	at sun.net.www.http.HttpClient.openServer(Unknown Source)
+	at sun.net.www.http.HttpClient.openServer(Unknown Source)
+	at sun.net.www.http.HttpClient.&lt;init&gt;(Unknown Source)
+	at sun.net.www.http.HttpClient.New(Unknown Source)
+	at sun.net.www.http.HttpClient.New(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(Unknown Source)
+	at org.springframework.http.client.SimpleBufferingClientHttpRequest.executeInternal(SimpleBufferingClientHttpRequest.java:78)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:53)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:660)
+	... 38 more
+</error>
+    <system-out>2018-05-24 11:57:40.891  INFO 7448 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.telstra.codechallenge.service.HottestRepoCreatedLastWeekTest], using SpringBootContextLoader
+2018-05-24 11:57:40.892  INFO 7448 --- [           main] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.telstra.codechallenge.service.HottestRepoCreatedLastWeekTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2018-05-24 11:57:40.893  INFO 7448 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.telstra.codechallenge.service.HottestRepoCreatedLastWeekTest]: HottestRepoCreatedLastWeekTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2018-05-24 11:57:40.929  INFO 7448 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.telstra.codechallenge.MicroServiceMain for test class com.telstra.codechallenge.service.HottestRepoCreatedLastWeekTest
+2018-05-24 11:57:40.955  INFO 7448 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2018-05-24 11:57:40.960  INFO 7448 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@66aa9ac9, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@607e15f, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@596e41b9, org.springframework.test.context.support.DirtiesContextTestExecutionListener@637937d5, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@51b785a1, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@68839bd1, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@43cb7cf1, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@69262cc2, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@45136ca, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@70786882]
+2018-05-24 11:57:41.207  INFO 7448 --- [           main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@4d081f89: startup date [Thu May 24 11:57:41 IST 2018]; root of context hierarchy
+2018-05-24 11:57:41.239  INFO 7448 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean &apos;configurationPropertiesRebinderAutoConfiguration&apos; of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$5be946c0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+  .   ____          _            __ _ _
+ /\\ / ___&apos;_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | &apos;_ | &apos;_| | &apos;_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  &apos;  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::       (v1.5.10.RELEASE)
+
+2018-05-24 11:57:41.503  WARN 7448 --- [           main] ory$DuplicateJsonObjectContextCustomizer : 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/RU20012347/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/RU20012347/.m2/repository/org/json/json/20080701/json-20080701.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2018-05-24 11:57:41.504  INFO 7448 --- [           main] c.t.c.s.HottestRepoCreatedLastWeekTest   : No active profile set, falling back to default profiles: default
+2018-05-24 11:57:41.506  INFO 7448 --- [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@8c41fbf: startup date [Thu May 24 11:57:41 IST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@4d081f89
+2018-05-24 11:57:41.762  INFO 7448 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=e097591f-81b8-3c79-b206-b9fdf7eb7dab
+2018-05-24 11:57:41.838  INFO 7448 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean &apos;org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration&apos; of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$5be946c0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-05-24 11:57:42.011  INFO 7448 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 0 (http)
+2018-05-24 11:57:42.012  INFO 7448 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-05-24 11:57:42.013  INFO 7448 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.27
+2018-05-24 11:57:42.027  INFO 7448 --- [ost-startStop-1] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2018-05-24 11:57:42.027  INFO 7448 --- [ost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 521 ms
+2018-05-24 11:57:42.375  INFO 7448 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: &apos;metricsFilter&apos; to: [/*]
+2018-05-24 11:57:42.375  INFO 7448 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: &apos;characterEncodingFilter&apos; to: [/*]
+2018-05-24 11:57:42.375  INFO 7448 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: &apos;hiddenHttpMethodFilter&apos; to: [/*]
+2018-05-24 11:57:42.375  INFO 7448 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: &apos;httpPutFormContentFilter&apos; to: [/*]
+2018-05-24 11:57:42.375  INFO 7448 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: &apos;requestContextFilter&apos; to: [/*]
+2018-05-24 11:57:42.375  INFO 7448 --- [ost-startStop-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: &apos;springSecurityFilterChain&apos; to: [/*]
+2018-05-24 11:57:42.375  INFO 7448 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: &apos;webRequestLoggingFilter&apos; to: [/*]
+2018-05-24 11:57:42.375  INFO 7448 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: &apos;applicationContextIdFilter&apos; to: [/*]
+2018-05-24 11:57:42.375  INFO 7448 --- [ost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: &apos;dispatcherServlet&apos; to [/]
+2018-05-24 11:57:43.208  WARN 7448 --- [           main] o.s.c.n.a.ArchaiusAutoConfiguration      : No spring.application.name found, defaulting to &apos;application&apos;
+2018-05-24 11:57:43.209  WARN 7448 --- [           main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2018-05-24 11:57:43.209  INFO 7448 --- [           main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-05-24 11:57:43.441  INFO 7448 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@8c41fbf: startup date [Thu May 24 11:57:41 IST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@4d081f89
+2018-05-24 11:57:43.496  INFO 7448 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/api/hottestcreatedrepo],methods=[GET],produces=[application/json;charset=UTF-8]}&quot; onto public org.springframework.http.ResponseEntity com.telstra.codechallenge.controller.HottestRepoCreatedLastWeekController.hotestRepo(java.lang.String)
+2018-05-24 11:57:43.496  INFO 7448 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/api/zeroFollowers],methods=[GET]}&quot; onto public org.springframework.http.ResponseEntity com.telstra.codechallenge.controller.ZeroFollowersController.hotestRepo(java.lang.String)
+2018-05-24 11:57:43.497  INFO 7448 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/error]}&quot; onto public org.springframework.http.ResponseEntity&lt;java.util.Map&lt;java.lang.String, java.lang.Object&gt;&gt; org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-05-24 11:57:43.498  INFO 7448 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/error],produces=[text/html]}&quot; onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-05-24 11:57:43.583  INFO 7448 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-24 11:57:43.584  INFO 7448 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-24 11:57:43.626  INFO 7448 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-24 11:57:43.833  INFO 7448 --- [           main] b.a.s.AuthenticationManagerConfiguration : 
+
+Using default security password: 4169c68c-a86e-4f2a-b233-968e02f50dba
+
+2018-05-24 11:57:43.851  INFO 7448 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern=&apos;/css/**&apos;], Ant [pattern=&apos;/js/**&apos;], Ant [pattern=&apos;/images/**&apos;], Ant [pattern=&apos;/webjars/**&apos;], Ant [pattern=&apos;/**/favicon.ico&apos;], Ant [pattern=&apos;/error&apos;]]], []
+2018-05-24 11:57:44.176  INFO 7448 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped &quot;{[/dump || /dump.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}&quot; onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-05-24 11:57:44.177  INFO 7448 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped &quot;{[/configprops || /configprops.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}&quot; onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-05-24 11:57:44.178  INFO 7448 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped &quot;{[/beans || /beans.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}&quot; onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-05-24 11:57:44.178  INFO 7448 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped &quot;{[/trace || /trace.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}&quot; onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-05-24 11:57:44.179  INFO 7448 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped &quot;{[/loggers/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}&quot; onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.get(java.lang.String)
+2018-05-24 11:57:44.180  INFO 7448 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped &quot;{[/loggers/{name:.*}],methods=[POST],consumes=[application/vnd.spring-boot.actuator.v1+json || application/json],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}&quot; onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.set(java.lang.String,java.util.Map&lt;java.lang.String, java.lang.String&gt;)
+2018-05-24 11:57:44.180  INFO 7448 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped &quot;{[/loggers || /loggers.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}&quot; onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-05-24 11:57:44.181  INFO 7448 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped &quot;{[/refresh || /refresh.json],methods=[POST]}&quot; onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+2018-05-24 11:57:44.181  INFO 7448 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped &quot;{[/env],methods=[POST]}&quot; onto public java.lang.Object org.springframework.cloud.context.environment.EnvironmentManagerMvcEndpoint.value(java.util.Map&lt;java.lang.String, java.lang.String&gt;)
+2018-05-24 11:57:44.181  INFO 7448 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped &quot;{[/env/reset],methods=[POST]}&quot; onto public java.util.Map&lt;java.lang.String, java.lang.Object&gt; org.springframework.cloud.context.environment.EnvironmentManagerMvcEndpoint.reset()
+2018-05-24 11:57:44.182  INFO 7448 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped &quot;{[/heapdump || /heapdump.json],methods=[GET],produces=[application/octet-stream]}&quot; onto public void org.springframework.boot.actuate.endpoint.mvc.HeapdumpMvcEndpoint.invoke(boolean,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+2018-05-24 11:57:44.183  INFO 7448 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped &quot;{[/health || /health.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}&quot; onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,java.security.Principal)
+2018-05-24 11:57:44.184  INFO 7448 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped &quot;{[/mappings || /mappings.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}&quot; onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-05-24 11:57:44.184  INFO 7448 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped &quot;{[/archaius || /archaius.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}&quot; onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-05-24 11:57:44.185  INFO 7448 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped &quot;{[/features || /features.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}&quot; onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-05-24 11:57:44.185  INFO 7448 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped &quot;{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}&quot; onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-05-24 11:57:44.187  INFO 7448 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped &quot;{[/metrics/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}&quot; onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+2018-05-24 11:57:44.187  INFO 7448 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped &quot;{[/metrics || /metrics.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}&quot; onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-05-24 11:57:44.188  INFO 7448 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped &quot;{[/info || /info.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}&quot; onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-05-24 11:57:44.188  INFO 7448 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped &quot;{[/env/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}&quot; onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+2018-05-24 11:57:44.188  INFO 7448 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped &quot;{[/env || /env.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}&quot; onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-05-24 11:57:44.189  INFO 7448 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped &quot;{[/auditevents || /auditevents.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}&quot; onto public org.springframework.http.ResponseEntity&lt;?&gt; org.springframework.boot.actuate.endpoint.mvc.AuditEventsMvcEndpoint.findByPrincipalAndAfterAndType(java.lang.String,java.util.Date,java.lang.String)
+2018-05-24 11:57:44.190  INFO 7448 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped &quot;{[/hystrix.stream/**]}&quot; onto public org.springframework.web.servlet.ModelAndView org.springframework.cloud.netflix.endpoint.ServletWrappingEndpoint.handle(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+2018-05-24 11:57:44.197  INFO 7448 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: org.springframework.boot.actuate.autoconfigure.ManagementWebSecurityAutoConfiguration$LazyEndpointPathRequestMatcher@56bcb00b, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@551cf838, org.springframework.security.web.context.SecurityContextPersistenceFilter@2882549a, org.springframework.security.web.header.HeaderWriterFilter@6b79ef0, org.springframework.web.filter.CorsFilter@62ed6e17, org.springframework.security.web.authentication.logout.LogoutFilter@16cf8012, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@7cc7dc3f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@230f8709, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@130dd665, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7fe5f48a, org.springframework.security.web.session.SessionManagementFilter@2214387f, org.springframework.security.web.access.ExceptionTranslationFilter@52027e30, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6c9725c6]
+2018-05-24 11:57:44.199  INFO 7448 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern=&apos;/**&apos;]]], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@23ad20c0, org.springframework.security.web.context.SecurityContextPersistenceFilter@9e9ed77, org.springframework.security.web.header.HeaderWriterFilter@35562bd0, org.springframework.security.web.authentication.logout.LogoutFilter@65434c92, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@23878718, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@381720ba, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3c1b94c3, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2bcd7026, org.springframework.security.web.session.SessionManagementFilter@50712e1c, org.springframework.security.web.access.ExceptionTranslationFilter@11941b73, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@22b148d5]
+2018-05-24 11:57:44.623  INFO 7448 --- [           main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2018-05-24 11:57:44.623  INFO 7448 --- [           main] ration$HystrixMetricsPollerConfiguration : Starting poller
+2018-05-24 11:57:44.664  INFO 7448 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 53355 (http)
+2018-05-24 11:57:44.667  INFO 7448 --- [           main] c.t.c.s.HottestRepoCreatedLastWeekTest   : Started HottestRepoCreatedLastWeekTest in 3.7 seconds (JVM running for 24.854)
+</system-out>
+  </testcase>
+  <testcase classname="com.telstra.codechallenge.service.HottestRepoCreatedLastWeekTest" name="limitvalidator" time="1.103">
+    <error message="I/O error on GET request for &quot;http://localhost:8080/api/hottestcreatedrepo&quot;: Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect" type="org.springframework.web.client.ResourceAccessException">org.springframework.web.client.ResourceAccessException: I/O error on GET request for &quot;http://localhost:8080/api/hottestcreatedrepo&quot;: Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:674)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:621)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:539)
+	at com.telstra.codechallenge.service.HottestRepoCreatedLastWeekTest.limitvalidator(HottestRepoCreatedLastWeekTest.java:80)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:75)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:252)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:53)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:123)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:104)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at sun.net.NetworkClient.doConnect(Unknown Source)
+	at sun.net.www.http.HttpClient.openServer(Unknown Source)
+	at sun.net.www.http.HttpClient.openServer(Unknown Source)
+	at sun.net.www.http.HttpClient.&lt;init&gt;(Unknown Source)
+	at sun.net.www.http.HttpClient.New(Unknown Source)
+	at sun.net.www.http.HttpClient.New(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(Unknown Source)
+	at org.springframework.http.client.SimpleBufferingClientHttpRequest.executeInternal(SimpleBufferingClientHttpRequest.java:78)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:53)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:660)
+	... 38 more
+</error>
+  </testcase>
+  <testcase classname="com.telstra.codechallenge.service.HottestRepoCreatedLastWeekTest" name="hottestcreatedrepoJsondatavalidator" time="1.039">
+    <error message="I/O error on GET request for &quot;http://localhost:8080/api/hottestcreatedrepo&quot;: Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect" type="org.springframework.web.client.ResourceAccessException">org.springframework.web.client.ResourceAccessException: I/O error on GET request for &quot;http://localhost:8080/api/hottestcreatedrepo&quot;: Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:674)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:621)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:539)
+	at com.telstra.codechallenge.service.HottestRepoCreatedLastWeekTest.hottestcreatedrepoJsondatavalidator(HottestRepoCreatedLastWeekTest.java:59)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:75)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:252)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:53)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:123)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:104)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at sun.net.NetworkClient.doConnect(Unknown Source)
+	at sun.net.www.http.HttpClient.openServer(Unknown Source)
+	at sun.net.www.http.HttpClient.openServer(Unknown Source)
+	at sun.net.www.http.HttpClient.&lt;init&gt;(Unknown Source)
+	at sun.net.www.http.HttpClient.New(Unknown Source)
+	at sun.net.www.http.HttpClient.New(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(Unknown Source)
+	at org.springframework.http.client.SimpleBufferingClientHttpRequest.executeInternal(SimpleBufferingClientHttpRequest.java:78)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:53)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:660)
+	... 38 more
+</error>
+  </testcase>
+</testsuite>

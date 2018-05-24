@@ -9,20 +9,21 @@ import org.json.JSONException;
 import org.json.JSONObject;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.skyscreamer.jsonassert.JSONAssert;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.context.SpringBootTest.WebEnvironment;
+import org.springframework.boot.test.web.client.TestRestTemplate;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpMethod;
 import org.springframework.http.ResponseEntity;
 import org.springframework.test.context.junit4.SpringRunner;
-import org.springframework.web.client.RestTemplate;
 
 @SpringBootTest(webEnvironment = WebEnvironment.RANDOM_PORT)
 @RunWith(SpringRunner.class)
-public class HottestRepoCreatedLastWeekTest {
+public class ZeroFollowersRepoTest {
 
 	@Value("${GitRepo.base.url}")
 	private String GitRepoBaseUrl;
@@ -30,20 +31,21 @@ public class HottestRepoCreatedLastWeekTest {
 	HttpHeaders headers = new HttpHeaders();
 
 	@Autowired
-	private RestTemplate restTemplate;
+	private TestRestTemplate restTemplate;
 
 	@Test
-	public void hottestCreatedRepoServiceCheckTest() throws Exception {
-		String body = this.restTemplate.getForObject(createURL("/gethottestcreatedrepo?limit=1"), String.class);
+	public void zeroFollowersServiceCheckTest() throws Exception {
+		String body = this.restTemplate.getForObject(createURL("/getzerofollowersrepo?limit=1"), String.class);
 		assertThat(body).isNotNull();
+
 	}
 
 	@Test
-	public void hottestcreatedrepoJsondatavalidator() throws JSONException {
+	public void zeroFollowersJsondatavalidator() throws JSONException {
 
 		HttpEntity<String> entity = new HttpEntity<String>(null, headers);
 
-		ResponseEntity<String> response = restTemplate.exchange(createURL("/gethottestcreatedrepo?limit=10"),
+		ResponseEntity<String> response = restTemplate.exchange(createURL("/getzerofollowersrepo?limit=10"),
 				HttpMethod.GET, entity, String.class);
 
 		JSONArray jsonArry = new JSONArray(response.getBody());
@@ -51,11 +53,9 @@ public class HottestRepoCreatedLastWeekTest {
 		for (int i = 0; i < jsonArry.length(); i++) {
 			JSONObject responseObject = jsonArry.getJSONObject(i);
 			assertNotNull(responseObject);
-			assertNotNull(responseObject.get("watchersCount"));
+			assertNotNull(responseObject.get("id"));
 			assertNotNull(responseObject.get("htmlUrl"));
-			assertNotNull(responseObject.get("name"));
-			assertNotNull(responseObject.get("description"));
-			assertNotNull(responseObject.get("language"));
+			assertNotNull(responseObject.get("login"));
 		}
 	}
 
@@ -64,7 +64,7 @@ public class HottestRepoCreatedLastWeekTest {
 
 		HttpEntity<String> entity = new HttpEntity<String>(null, headers);
 
-		ResponseEntity<String> response = restTemplate.exchange(createURL("/gethottestcreatedrepo?limit=AA"),
+		ResponseEntity<String> response = restTemplate.exchange(createURL("/getzerofollowersrepo?limit=AA"),
 				HttpMethod.GET, entity, String.class);
 
 		JSONArray jsonArry = new JSONArray(response.getBody());
@@ -76,6 +76,19 @@ public class HottestRepoCreatedLastWeekTest {
 			assertEquals(responseObject.get("errorMessage"),
 					"Please enter valid positive interger value for Limit parameter.");
 		}
+	}
+
+	@Test
+	public void zeroFollowersResponseCheckTest() throws JSONException {
+
+		HttpEntity<String> entity = new HttpEntity<String>(null, headers);
+
+		ResponseEntity<String> response = restTemplate.exchange(createURL("/getzerofollowersrepo?limit=1"),
+				HttpMethod.GET, entity, String.class);
+
+		String expected = "[{\"id\":\"44\",\"login\":\"errfree\",\"htmlUrl\":\"https://github.com/errfree\"}]";
+
+		JSONAssert.assertEquals(expected, response.getBody(), false);
 	}
 
 	// return rest API URL
