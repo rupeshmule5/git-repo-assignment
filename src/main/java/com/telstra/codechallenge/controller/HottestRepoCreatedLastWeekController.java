@@ -28,8 +28,8 @@ public class HottestRepoCreatedLastWeekController {
 	@Autowired
 	private HottestRepoCreatedLastWeekService hottestRepoCreatedLastWeekService;
 
-	public HottestRepoCreatedLastWeekController(HottestRepoCreatedLastWeekService gitHubMostPouplarReposCreatedLastWeekService) {
-		this.hottestRepoCreatedLastWeekService = gitHubMostPouplarReposCreatedLastWeekService;
+	public HottestRepoCreatedLastWeekController(HottestRepoCreatedLastWeekService hottestRepoCreatedLastWeekServices) {
+		this.hottestRepoCreatedLastWeekService = hottestRepoCreatedLastWeekServices;
 	}
 
 	@RequestMapping(path = "/gethottestcreatedrepo", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
